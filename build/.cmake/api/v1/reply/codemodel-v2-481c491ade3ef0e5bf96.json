@@ -1,0 +1,206 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "TomBino",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-TomBino-Debug-ce0de9e99ee07c311de5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "TomBino",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						5,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-ed53bde82fccb4369c4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "mass_spring",
+					"jsonFile" : "directory-mass_spring-Debug-c96a73b23da88cba64b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mass_spring",
+					"targetIndexes" : 
+					[
+						1,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3
+					],
+					"name" : "TomBino_ode",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						4,
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "TomBino",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						5,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "bla::@e2585b18bd71b8857d2d",
+					"jsonFile" : "target-bla-Debug-ce300e1db9e27e773f8f.json",
+					"name" : "bla",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mass_spring::@c8e16af55571f60640e1",
+					"jsonFile" : "target-mass_spring-Debug-f4f6fcad92f2c72154ec.json",
+					"name" : "mass_spring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_alpha::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_alpha-Debug-2e2f28c20dd1908b1a48.json",
+					"name" : "test_alpha",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_lapack::@e2585b18bd71b8857d2d",
+					"jsonFile" : "target-test_lapack-Debug-0056865e160fb9fbf9d1.json",
+					"name" : "test_lapack",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "test_mass_spring::@c8e16af55571f60640e1",
+					"jsonFile" : "target-test_mass_spring-Debug-b8ab85d10d5e6d9fe434.json",
+					"name" : "test_mass_spring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_matrix::@e2585b18bd71b8857d2d",
+					"jsonFile" : "target-test_matrix-Debug-a6660212312cf01ac833.json",
+					"name" : "test_matrix",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_newmark::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_newmark-Debug-080e4c199b57c54ab333.json",
+					"name" : "test_newmark",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_ode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_ode-Debug-70b2abbd93cb1ef5bcb3.json",
+					"name" : "test_ode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_operations::@e2585b18bd71b8857d2d",
+					"jsonFile" : "target-test_operations-Debug-0991e6a0b89314db6035.json",
+					"name" : "test_operations",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "test_vector::@e2585b18bd71b8857d2d",
+					"jsonFile" : "target-test_vector-Debug-5211f3f2dd46affda079.json",
+					"name" : "test_vector",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ebonetti/Desktop/ASC-ODE/build",
+		"source" : "/home/ebonetti/Desktop/ASC-ODE"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
