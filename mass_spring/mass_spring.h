@@ -16,9 +16,9 @@ class Mass
 {
 public:
   double mass;
-  Vec<D> pos;
-  Vec<D> vel = 0.0;
-  Vec<D> acc = 0.0;
+  Vector<D> pos;
+  Vector<D> vel = 0.0;
+  Vector<D> acc = 0.0;
 };
 
 
@@ -26,7 +26,7 @@ template <int D>
 class Fix
 {
 public:
-  Vec<D> pos;
+  Vector<D> pos;
 };
 
 
@@ -58,11 +58,12 @@ class MassSpringSystem
   std::vector<Fix<D>> fixes;
   std::vector<Mass<D>> masses;
   std::vector<Spring> springs;
-  Vec<D> gravity=0.0;
+  Vector<D> gravity = 0.0;
+
 public:
-  void SetGravity (Vec<D> _gravity) { gravity = _gravity; }
-  Vec<D> Gravity() const { return gravity; }
-  
+  void SetGravity(Vector<D> _gravity) { gravity = _gravity; }
+  Vector<D> Gravity() const { return gravity; }
+
   Connector AddFix (Fix<D> p)
   {
     fixes.push_back(p);
@@ -160,7 +161,7 @@ public:
     for (auto spring : mss.Springs())
       {
         auto [c1,c2] = spring.connections;
-        Vec<D> p1, p2;
+        Vector<D> p1, p2;
         if (c1.type == Connector::FIX)
           p1 = mss.Fixes()[c1.nr].pos;
         else
@@ -171,7 +172,7 @@ public:
           p2 = xmat.Row(c2.nr);
 
         double force = spring.stiffness * (L2Norm(p1-p2)-spring.length);
-        Vec<D> dir12 = 1.0/L2Norm(p1-p2) * (p2-p1);
+        Vector<D> dir12 = 1.0 / L2Norm(p1 - p2) * (p2 - p1);
         if (c1.type == Connector::MASS)
           fmat.Row(c1.nr) += force*dir12;
         if (c2.type == Connector::MASS)

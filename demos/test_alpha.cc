@@ -2,6 +2,8 @@
 #include <ode.h>
 
 using namespace ASC_ode;
+using namespace Tombino_bla;
+using namespace std;
 
 // the pendulum with a length constraint
 
@@ -40,7 +42,7 @@ int main()
 {
   double tend = 50*2*M_PI;
   double steps = 1000;
-  Vector<double> x { 1, 0, 0, };
+  Vector<double> x{1, 0, 0};
   Vector<double> dx { 0, 0, 0 };
   Vector<double> ddx { 0, 0, 0 };
   auto rhs = make_shared<dLagrange>();

@@ -7,18 +7,25 @@
 
 #include "Newton.h"
 
+// use make_shared:
+#include <memory>
 
 namespace ASC_ode
 {
-  
+
+  using namespace Tombino_bla;
+  using std::make_shared;
+  using std::shared_ptr;
+
   // implicit Euler method for dy/dt = rhs(y)
-  void SolveODE_IE(double tend, int steps,
-                   VectorView<double> y, shared_ptr<NonlinearFunction> rhs,
-                   std::function<void(double,VectorView<double>)> callback = nullptr)
+  void
+  SolveODE_IE(double tend, int steps,
+              VectorView<double> y, shared_ptr<NonlinearFunction> rhs,
+              std::function<void(double, VectorView<double>)> callback = nullptr)
   {
     double dt = tend/steps;
-    auto yold = make_shared<ConstantFunction>(y);
-    auto ynew = make_shared<IdentityFunction>(y.Size());
+    auto yold = std::make_shared<ConstantFunction>(y);
+    auto ynew = std::make_shared<IdentityFunction>(y.Size());
     auto equ = ynew-yold - dt * rhs;
 
     double t = 0;
@@ -129,10 +136,6 @@ namespace ASC_ode
     dx = v;
     ddx = a;
   }
-
-  
-
 }
-
 
 #endif

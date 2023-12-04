@@ -1,8 +1,9 @@
 #include <nonlinfunc.h>
 #include <ode.h>
+#include <iostream>
 
 using namespace ASC_ode;
-
+using namespace std;
 
 class MassSpring : public NonlinearFunction
 {
