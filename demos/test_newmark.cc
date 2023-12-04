@@ -1,7 +1,9 @@
 #include <nonlinfunc.h>
 #include <ode.h>
-
+#include <iostream>
+#include <memory>
 using namespace ASC_ode;
+using namespace std;
 
 class RHS : public NonlinearFunction
 {

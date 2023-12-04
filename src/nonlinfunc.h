@@ -3,10 +3,14 @@
 
 #include <vector.h>
 #include <matrix.h>
+#include <memory>
 
 namespace ASC_ode
 {
   using namespace Tombino_bla;
+
+  // use the "std::shared_ptr":
+  using std::shared_ptr;
 
   class NonlinearFunction
   {
@@ -63,7 +67,7 @@ namespace ASC_ode
   
   class SumFunction : public NonlinearFunction
   {
-    shared_ptr<NonlinearFunction> fa, fb;
+    std::shared_ptr<NonlinearFunction> fa, fb;
     double faca, facb;
   public:
     SumFunction (shared_ptr<NonlinearFunction> _fa,
@@ -81,7 +85,7 @@ namespace ASC_ode
       fb->Evaluate(x, tmp);
       f += facb*tmp;
     }
-    void EvaluateDeriv (VectorView<double> x, MatrixView<double> df) const override
+    void EvaluateDeriv(VectorView<double> x, MatrixView<double, ORDERING::RowMajor> df) const override
     {
       fa->EvaluateDeriv(x, df);
       Matrix<> tmp(DimF(), DimX());
