@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -g -std=gnu++20 -o CMakeFiles/test_ode.dir/demos/test_ode.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc",
+  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_ode.dir/demos/test_ode.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc",
   "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc"
 },
 {
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -g -std=gnu++20 -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_newmark.cc",
+  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_newmark.cc",
   "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_newmark.cc"
 },
 {
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -g -std=gnu++20 -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_alpha.cc",
+  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_alpha.cc",
   "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_alpha.cc"
 },
 {
@@ -41,12 +41,12 @@
 },
 {
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -g -std=gnu++20 -o CMakeFiles/test_mass_spring.dir/mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc",
+  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_mass_spring.dir/mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc",
   "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc"
 },
 {
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12 -Dmass_spring_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/lib/python3.10/site-packages/pybind11/include -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc",
+  "command": "/usr/bin/g++-12 -Dmass_spring_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/lib/python3.10/site-packages/pybind11/include -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc",
   "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc"
 }
 ]

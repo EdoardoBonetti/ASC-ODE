@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-12
 CXX_DEFINES = -Dmass_spring_EXPORTS
 
-CXX_INCLUDES = -I/home/ebonetti/Desktop/ASC-ODE/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/lib/python3.10/site-packages/pybind11/include
+CXX_INCLUDES = -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/lib/python3.10/site-packages/pybind11/include
 
 CXX_FLAGS = -g -fPIC -fvisibility=hidden -std=gnu++20
 

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "mass_spring/test_mass_spring"
+			"path" : "test_alpha"
 		}
 	],
 	"backtrace" : 1,
@@ -11,12 +11,12 @@
 		"commands" : 
 		[
 			"add_executable",
+			"link_directories",
 			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
 		[
-			"mass_spring/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -27,23 +27,26 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 1,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 2,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
-				"file" : 1
+				"command" : 2,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
 			},
 			{
-				"command" : 2,
-				"file" : 1,
-				"line" : 24,
-				"parent" : 3
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
 			}
 		]
 	},
@@ -64,6 +67,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "/home/ebonetti/Desktop/ASC-ODE/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ebonetti/Desktop/ASC-ODE/TomBino/src"
 				}
 			],
 			"language" : "CXX",
@@ -81,7 +88,7 @@
 			]
 		}
 	],
-	"id" : "test_mass_spring::@c8e16af55571f60640e1",
+	"id" : "test_alpha::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -96,18 +103,32 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/src",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/ebonetti/Desktop/ASC-ODE/src:/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "-lngbla",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_mass_spring",
-	"nameOnDisk" : "test_mass_spring",
+	"name" : "test_alpha",
+	"nameOnDisk" : "test_alpha",
 	"paths" : 
 	{
-		"build" : "mass_spring",
-		"source" : "mass_spring"
+		"build" : ".",
+		"source" : "."
 	},
 	"sourceGroups" : 
 	[
@@ -124,7 +145,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "mass_spring/mass_spring.cc",
+			"path" : "demos/test_alpha.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

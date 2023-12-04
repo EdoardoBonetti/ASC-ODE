@@ -6,7 +6,7 @@
 
 namespace ASC_ode
 {
-  using namespace ngbla;
+  using namespace Tombino_bla;
 
   class NonlinearFunction
   {
@@ -15,7 +15,7 @@ namespace ASC_ode
     virtual size_t DimX() const = 0;
     virtual size_t DimF() const = 0;
     virtual void Evaluate (VectorView<double> x, VectorView<double> f) const = 0;
-    virtual void EvaluateDeriv (VectorView<double> x, MatrixView<double> df) const = 0;
+    virtual void EvaluateDeriv(VectorView<double> x, MatrixView<double, ORDERING::RowMajor> df) const = 0;
   };
 
 
@@ -30,8 +30,8 @@ namespace ASC_ode
     {
       f = x;
     }
-    
-    void EvaluateDeriv (VectorView<double> x, MatrixView<double> df) const override
+
+    void EvaluateDeriv(VectorView<double> x, MatrixView<double, ORDERING::RowMajor> df) const override
     {
       df = 0.0;
       df.Diag() = 1.0;
@@ -53,7 +53,7 @@ namespace ASC_ode
     {
       f = val;
     }
-    void EvaluateDeriv (VectorView<double> x, MatrixView<double> df) const override
+    void EvaluateDeriv(VectorView<double> x, MatrixView<double, ORDERING::RowMajor> df) const override
     {
       df = 0.0;
     }

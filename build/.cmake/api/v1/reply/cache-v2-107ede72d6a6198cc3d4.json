@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "ASC_ode_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ebonetti/Desktop/ASC-ODE/build"
-		},
-		{
-			"name" : "ASC_ode_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ASC_ode_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ebonetti/Desktop/ASC-ODE"
-		},
-		{
 			"name" : "BLAS_WORKS",
 			"properties" : 
 			[
@@ -359,10 +323,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/g++-12"
 		},
 		{
@@ -487,10 +451,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/gcc-12"
 		},
 		{
@@ -1418,66 +1382,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "NGSOLVE_COMPILE_FLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Preprocessor definitions of ngscxx"
-				}
-			],
-			"type" : "STRING",
-			"value" : " -DHAVE_NETGEN_SOURCES -DHAVE_DLFCN_H -DHAVE_CXA_DEMANGLE -DUSE_TIMEOFDAY -DTCL -DLAPACK -DNGS_PYTHON -DUSE_UMFPACK -DNETGEN_PYTHON -DNG_PYTHON -DPYBIND11_SIMPLE_GIL_MANAGEMENT"
-		},
-		{
-			"name" : "NGSOLVE_INCLUDE_DIRS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Include dirs set in ngscxx"
-				}
-			],
-			"type" : "STRING",
-			"value" : "/usr/include/python3.10;/usr/include/suitesparse"
-		},
-		{
-			"name" : "NGSOLVE_LINK_FLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Link flags set in ngsld"
-				}
-			],
-			"type" : "STRING",
-			"value" : " -L$NGSCXX_DIR/../lib/netgen -Wl,--rpath=$NGSCXX_DIR/../lib/netgen"
-		},
-		{
-			"name" : "NGSolve_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for NGSolve."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/lib/cmake/ngsolve"
-		},
-		{
-			"name" : "Netgen_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Netgen."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/usr/lib/cmake/netgen"
-		},
-		{
 			"name" : "PYBIND11_PYTHON_EXECUTABLE_LAST",
 			"properties" : 
 			[
@@ -1524,18 +1428,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/ebonetti/Desktop/ASC-ODE/build/TomBino"
-		},
-		{
-			"name" : "TomBino_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for TomBino."
-				}
-			],
-			"type" : "PATH",
-			"value" : "TomBino_DIR-NOTFOUND"
 		},
 		{
 			"name" : "TomBino_IS_TOP_LEVEL",

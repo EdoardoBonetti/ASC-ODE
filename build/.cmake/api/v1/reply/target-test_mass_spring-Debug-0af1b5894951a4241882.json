@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test_newmark"
+			"path" : "mass_spring/test_mass_spring"
 		}
 	],
 	"backtrace" : 1,
@@ -11,11 +11,13 @@
 		"commands" : 
 		[
 			"add_executable",
+			"link_directories",
 			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
 		[
+			"mass_spring/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -26,20 +28,29 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 33,
+				"line" : 1,
 				"parent" : 0
 			},
 			{
+				"file" : 1
+			},
+			{
 				"command" : 1,
-				"file" : 0,
-				"line" : 34,
-				"parent" : 0
+				"file" : 1,
+				"line" : 12,
+				"parent" : 2
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 2,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
 			}
 		]
 	},
@@ -58,8 +69,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 5,
 					"path" : "/home/ebonetti/Desktop/ASC-ODE/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ebonetti/Desktop/ASC-ODE/TomBino/src"
 				}
 			],
 			"language" : "CXX",
@@ -77,7 +92,7 @@
 			]
 		}
 	],
-	"id" : "test_newmark::@6890427a1f51a3e7e1df",
+	"id" : "test_mass_spring::@c8e16af55571f60640e1",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -91,19 +106,33 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/src",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/ebonetti/Desktop/ASC-ODE/src:/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "-lngbla",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "test_newmark",
-	"nameOnDisk" : "test_newmark",
+	"name" : "test_mass_spring",
+	"nameOnDisk" : "test_mass_spring",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "mass_spring",
+		"source" : "mass_spring"
 	},
 	"sourceGroups" : 
 	[
@@ -120,7 +149,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "demos/test_newmark.cc",
+			"path" : "mass_spring/mass_spring.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

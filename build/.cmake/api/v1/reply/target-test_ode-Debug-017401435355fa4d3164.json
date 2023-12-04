@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"link_directories",
 			"target_link_libraries",
 			"include_directories"
 		],
@@ -26,19 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 30,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -58,8 +65,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/ebonetti/Desktop/ASC-ODE/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ebonetti/Desktop/ASC-ODE/TomBino/src"
 				}
 			],
 			"language" : "CXX",
@@ -92,6 +103,20 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/src",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/ebonetti/Desktop/ASC-ODE/src:/home/ebonetti/Desktop/ASC-ODE/TomBino/src",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "-lTomBion_bla",
 				"role" : "libraries"
 			}
