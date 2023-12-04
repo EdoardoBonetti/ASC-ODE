@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-12
 CXX_DEFINES = -Dbla_EXPORTS
 
-CXX_INCLUDES = -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/lib/python3.10/site-packages/pybind11/include
+CXX_INCLUDES = -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/include
 
-CXX_FLAGS = -g -fPIC -fvisibility=hidden
+CXX_FLAGS =   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -fPIC -fvisibility=hidden -std=gnu++20
 
