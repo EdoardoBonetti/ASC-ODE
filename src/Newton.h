@@ -22,7 +22,7 @@ namespace ASC_ode
       std::cout << "|res| = " << L2Norm(res) << endl;
       func->EvaluateDeriv(x, fprime);
       std::cout << "fprime = " << fprime << std::endl;
-      Inverse(fprime);
+      fprime = Inverse(fprime);
       std::cout << "fprime^-1 = " << fprime << endl;
       x -= fprime * res;
 
