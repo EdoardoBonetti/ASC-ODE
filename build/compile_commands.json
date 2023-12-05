@@ -38,15 +38,5 @@
   "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
   "command": "/usr/bin/g++-12 -Dbla_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/include   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/bla.dir/src/bind_bla.cpp.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/src/bind_bla.cpp",
   "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/src/bind_bla.cpp"
-},
-{
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_mass_spring.dir/mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc"
-},
-{
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12 -Dmass_spring_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/include -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc"
 }
 ]

@@ -227,6 +227,7 @@ TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o: ../TomBino/tests_
   /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
+  ../TomBino/src/vector.h \
   ../TomBino/src/vector.h
 
 

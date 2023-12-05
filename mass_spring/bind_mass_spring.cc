@@ -1,4 +1,5 @@
 #include <sstream>
+#include <pybind11/iostream.h>
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <pybind11/stl_bind.h>
@@ -6,6 +7,7 @@
 #include "mass_spring.h"
 
 namespace py = pybind11;
+using namespace std;
 
 PYBIND11_MAKE_OPAQUE(std::vector<Mass<3>>);
 PYBIND11_MAKE_OPAQUE(std::vector<Fix<3>>);
@@ -69,37 +71,43 @@ PYBIND11_MODULE(mass_spring, m) {
       .def(py::init<>())
       .def("Add", [](MassSpringSystem<2> & mss, Mass<2> m) { return mss.AddMass(m); })
       ;
-      
-        
-    py::class_<MassSpringSystem<3>> (m, "MassSpringSystem3d")
-      .def(py::init<>())
-      .def("__str__", [](MassSpringSystem<3> & mss) {
+
+    py::class_<MassSpringSystem<3>>(m, "MassSpringSystem3d")
+        .def(py::init<>())
+        .def("__str__", [](MassSpringSystem<3> &mss)
+             {
         stringstream sstr;
         sstr << mss;
-        return sstr.str();
-      })
-      .def_property("gravity", [](MassSpringSystem<3> & mss) { return mss.Gravity(); },
-                    [](MassSpringSystem<3> & mss, std::array<double,3> g) { mss.SetGravity(Vec<3>{g[0],g[1],g[2]}); })
-      .def("Add", [](MassSpringSystem<3> & mss, Mass<3> m) { return mss.AddMass(m); })
-      .def("Add", [](MassSpringSystem<3> & mss, Fix<3> f) { return mss.AddFix(f); })
-      .def("Add", [](MassSpringSystem<3> & mss, Spring s) { return mss.AddSpring(s); })            
-      .def_property_readonly("masses", [](MassSpringSystem<3> & mss) -> auto& { return mss.Masses(); })
-      .def_property_readonly("fixes", [](MassSpringSystem<3> & mss) -> auto& { return mss.Fixes(); })
-      .def_property_readonly("springs", [](MassSpringSystem<3> & mss) -> auto& { return mss.Springs(); })            
-      .def("__getitem__", [](MassSpringSystem<3> mss, Connector & c) {
+        return sstr.str(); })
+        .def_property(
+            "gravity", [](MassSpringSystem<3> &mss)
+            { return mss.Gravity(); },
+            [](MassSpringSystem<3> &mss, std::array<double, 3> g)
+            { mss.SetGravity(Vector<3>{g[0], g[1], g[2]}); })
+        .def("Add", [](MassSpringSystem<3> &mss, Mass<3> m)
+             { return mss.AddMass(m); })
+        .def("Add", [](MassSpringSystem<3> &mss, Fix<3> f)
+             { return mss.AddFix(f); })
+        .def("Add", [](MassSpringSystem<3> &mss, Spring s)
+             { return mss.AddSpring(s); })
+        .def_property_readonly("masses", [](MassSpringSystem<3> &mss) -> auto &
+                               { return mss.Masses(); })
+        .def_property_readonly("fixes", [](MassSpringSystem<3> &mss) -> auto &
+                               { return mss.Fixes(); })
+        .def_property_readonly("springs", [](MassSpringSystem<3> &mss) -> auto &
+                               { return mss.Springs(); })
+        .def("__getitem__", [](MassSpringSystem<3> mss, Connector &c)
+             {
         if (c.type==Connector::FIX) return py::cast(mss.Fixes()[c.nr]);
-        else return py::cast(mss.Masses()[c.nr]);
-      })
-      
-      .def("GetState", [] (MassSpringSystem<3> & mss) {
+        else return py::cast(mss.Masses()[c.nr]); })
+
+        .def("GetState", [](MassSpringSystem<3> &mss)
+             {
         Vector<> x(3*mss.Masses().size());
         Vector<> dx(3*mss.Masses().size());
         Vector<> ddx(3*mss.Masses().size());
         mss.GetState (x, dx, ddx);
-        return x;
-      })
-      ;
-    
+        return x; });
 
     m.def("Simulate", [](MassSpringSystem<3> & mss, double tend, size_t steps) {
       Vector<> x(3*mss.Masses().size());

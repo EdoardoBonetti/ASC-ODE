@@ -17,7 +17,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "../mass_spring/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
@@ -142,7 +141,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "TomBino/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "mass_spring/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -155,6 +153,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "TomBino/CMakeFiles/test_operations.dir/DependInfo.cmake"
   "TomBino/CMakeFiles/test_lapack.dir/DependInfo.cmake"
   "TomBino/CMakeFiles/bla.dir/DependInfo.cmake"
-  "mass_spring/CMakeFiles/test_mass_spring.dir/DependInfo.cmake"
-  "mass_spring/CMakeFiles/mass_spring.dir/DependInfo.cmake"
   )
