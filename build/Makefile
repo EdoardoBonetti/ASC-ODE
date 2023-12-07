@@ -265,6 +265,32 @@ bla/fast:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/bla.dir/build.make TomBino/CMakeFiles/bla.dir/build
 .PHONY : bla/fast
 
+#=============================================================================
+# Target rules for targets named test_mass_spring
+
+# Build rule for target.
+test_mass_spring: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mass_spring
+.PHONY : test_mass_spring
+
+# fast build rule for target.
+test_mass_spring/fast:
+	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/test_mass_spring.dir/build.make mass_spring/CMakeFiles/test_mass_spring.dir/build
+.PHONY : test_mass_spring/fast
+
+#=============================================================================
+# Target rules for targets named mass_spring
+
+# Build rule for target.
+mass_spring: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mass_spring
+.PHONY : mass_spring
+
+# fast build rule for target.
+mass_spring/fast:
+	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/mass_spring.dir/build.make mass_spring/CMakeFiles/mass_spring.dir/build
+.PHONY : mass_spring/fast
+
 demos/test_alpha.o: demos/test_alpha.cc.o
 .PHONY : demos/test_alpha.o
 
@@ -350,8 +376,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... bla"
+	@echo "... mass_spring"
 	@echo "... test_alpha"
 	@echo "... test_lapack"
+	@echo "... test_mass_spring"
 	@echo "... test_matrix"
 	@echo "... test_newmark"
 	@echo "... test_ode"
