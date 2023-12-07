@@ -224,6 +224,7 @@ CMakeFiles/test_ode.dir/demos/test_ode.cc.o: ../demos/test_ode.cc \
   /usr/include/c++/12/bits/sstream.tcc \
   ../TomBino/src/matrix.h \
   ../TomBino/src/vector.h \
+  ../TomBino/src/matrix.h \
   /usr/include/c++/12/memory \
   /usr/include/c++/12/bits/stl_uninitialized.h \
   /usr/include/c++/12/bits/stl_tempbuf.h \

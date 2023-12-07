@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ebonetti/Desktop/ASC-ODE
+CMAKE_SOURCE_DIR = /home/ebonetti/Desktop/IntoToSC/ASC-ODE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ebonetti/Desktop/ASC-ODE/build
+CMAKE_BINARY_DIR = /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles /home/ebonetti/Desktop/ASC-ODE/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -265,32 +265,6 @@ bla/fast:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/bla.dir/build.make TomBino/CMakeFiles/bla.dir/build
 .PHONY : bla/fast
 
-#=============================================================================
-# Target rules for targets named test_mass_spring
-
-# Build rule for target.
-test_mass_spring: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mass_spring
-.PHONY : test_mass_spring
-
-# fast build rule for target.
-test_mass_spring/fast:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/test_mass_spring.dir/build.make mass_spring/CMakeFiles/test_mass_spring.dir/build
-.PHONY : test_mass_spring/fast
-
-#=============================================================================
-# Target rules for targets named mass_spring
-
-# Build rule for target.
-mass_spring: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mass_spring
-.PHONY : mass_spring
-
-# fast build rule for target.
-mass_spring/fast:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/mass_spring.dir/build.make mass_spring/CMakeFiles/mass_spring.dir/build
-.PHONY : mass_spring/fast
-
 demos/test_alpha.o: demos/test_alpha.cc.o
 .PHONY : demos/test_alpha.o
 
@@ -376,10 +350,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... bla"
-	@echo "... mass_spring"
 	@echo "... test_alpha"
 	@echo "... test_lapack"
-	@echo "... test_mass_spring"
 	@echo "... test_matrix"
 	@echo "... test_newmark"
 	@echo "... test_ode"

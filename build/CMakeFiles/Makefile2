@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ebonetti/Desktop/ASC-ODE
+CMAKE_SOURCE_DIR = /home/ebonetti/Desktop/IntoToSC/ASC-ODE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ebonetti/Desktop/ASC-ODE/build
+CMAKE_BINARY_DIR = /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -68,13 +68,11 @@ all: CMakeFiles/test_newmark.dir/all
 all: CMakeFiles/test_alpha.dir/all
 all: TomBino/all
 all: src/all
-all: mass_spring/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: TomBino/preinstall
 preinstall: src/preinstall
-preinstall: mass_spring/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -83,7 +81,6 @@ clean: CMakeFiles/test_newmark.dir/clean
 clean: CMakeFiles/test_alpha.dir/clean
 clean: TomBino/clean
 clean: src/clean
-clean: mass_spring/clean
 .PHONY : clean
 
 #=============================================================================
@@ -110,23 +107,6 @@ TomBino/clean: TomBino/CMakeFiles/bla.dir/clean
 .PHONY : TomBino/clean
 
 #=============================================================================
-# Directory level rules for directory mass_spring
-
-# Recursive "all" directory target.
-mass_spring/all: mass_spring/CMakeFiles/test_mass_spring.dir/all
-mass_spring/all: mass_spring/CMakeFiles/mass_spring.dir/all
-.PHONY : mass_spring/all
-
-# Recursive "preinstall" directory target.
-mass_spring/preinstall:
-.PHONY : mass_spring/preinstall
-
-# Recursive "clean" directory target.
-mass_spring/clean: mass_spring/CMakeFiles/test_mass_spring.dir/clean
-mass_spring/clean: mass_spring/CMakeFiles/mass_spring.dir/clean
-.PHONY : mass_spring/clean
-
-#=============================================================================
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
@@ -148,14 +128,14 @@ src/clean:
 CMakeFiles/test_ode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ode.dir/build.make CMakeFiles/test_ode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ode.dir/build.make CMakeFiles/test_ode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=15,16 "Built target test_ode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=11,12 "Built target test_ode"
 .PHONY : CMakeFiles/test_ode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_ode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_ode.dir/rule
 
 # Convenience name for target.
@@ -174,14 +154,14 @@ CMakeFiles/test_ode.dir/clean:
 CMakeFiles/test_newmark.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_newmark.dir/build.make CMakeFiles/test_newmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_newmark.dir/build.make CMakeFiles/test_newmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=13,14 "Built target test_newmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=9,10 "Built target test_newmark"
 .PHONY : CMakeFiles/test_newmark.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_newmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_newmark.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_newmark.dir/rule
 
 # Convenience name for target.
@@ -200,14 +180,14 @@ CMakeFiles/test_newmark.dir/clean:
 CMakeFiles/test_alpha.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alpha.dir/build.make CMakeFiles/test_alpha.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_alpha.dir/build.make CMakeFiles/test_alpha.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=5,6 "Built target test_alpha"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=3,4 "Built target test_alpha"
 .PHONY : CMakeFiles/test_alpha.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_alpha.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_alpha.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_alpha.dir/rule
 
 # Convenience name for target.
@@ -226,14 +206,14 @@ CMakeFiles/test_alpha.dir/clean:
 TomBino/CMakeFiles/test_vector.dir/all:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_vector.dir/build.make TomBino/CMakeFiles/test_vector.dir/depend
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_vector.dir/build.make TomBino/CMakeFiles/test_vector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=19,20 "Built target test_vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=15,16 "Built target test_vector"
 .PHONY : TomBino/CMakeFiles/test_vector.dir/all
 
 # Build rule for subdir invocation for target.
 TomBino/CMakeFiles/test_vector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_vector.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : TomBino/CMakeFiles/test_vector.dir/rule
 
 # Convenience name for target.
@@ -252,14 +232,14 @@ TomBino/CMakeFiles/test_vector.dir/clean:
 TomBino/CMakeFiles/test_matrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_matrix.dir/build.make TomBino/CMakeFiles/test_matrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_matrix.dir/build.make TomBino/CMakeFiles/test_matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=11,12 "Built target test_matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=7,8 "Built target test_matrix"
 .PHONY : TomBino/CMakeFiles/test_matrix.dir/all
 
 # Build rule for subdir invocation for target.
 TomBino/CMakeFiles/test_matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_matrix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : TomBino/CMakeFiles/test_matrix.dir/rule
 
 # Convenience name for target.
@@ -278,14 +258,14 @@ TomBino/CMakeFiles/test_matrix.dir/clean:
 TomBino/CMakeFiles/test_operations.dir/all:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/depend
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=17,18 "Built target test_operations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=13,14 "Built target test_operations"
 .PHONY : TomBino/CMakeFiles/test_operations.dir/all
 
 # Build rule for subdir invocation for target.
 TomBino/CMakeFiles/test_operations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_operations.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : TomBino/CMakeFiles/test_operations.dir/rule
 
 # Convenience name for target.
@@ -304,14 +284,14 @@ TomBino/CMakeFiles/test_operations.dir/clean:
 TomBino/CMakeFiles/test_lapack.dir/all:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_lapack.dir/build.make TomBino/CMakeFiles/test_lapack.dir/depend
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_lapack.dir/build.make TomBino/CMakeFiles/test_lapack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=7,8 "Built target test_lapack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=5,6 "Built target test_lapack"
 .PHONY : TomBino/CMakeFiles/test_lapack.dir/all
 
 # Build rule for subdir invocation for target.
 TomBino/CMakeFiles/test_lapack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_lapack.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : TomBino/CMakeFiles/test_lapack.dir/rule
 
 # Convenience name for target.
@@ -330,14 +310,14 @@ TomBino/CMakeFiles/test_lapack.dir/clean:
 TomBino/CMakeFiles/bla.dir/all:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/bla.dir/build.make TomBino/CMakeFiles/bla.dir/depend
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/bla.dir/build.make TomBino/CMakeFiles/bla.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=1,2 "Built target bla"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=1,2 "Built target bla"
 .PHONY : TomBino/CMakeFiles/bla.dir/all
 
 # Build rule for subdir invocation for target.
 TomBino/CMakeFiles/bla.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/bla.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles 0
 .PHONY : TomBino/CMakeFiles/bla.dir/rule
 
 # Convenience name for target.
@@ -348,58 +328,6 @@ bla: TomBino/CMakeFiles/bla.dir/rule
 TomBino/CMakeFiles/bla.dir/clean:
 	$(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/bla.dir/build.make TomBino/CMakeFiles/bla.dir/clean
 .PHONY : TomBino/CMakeFiles/bla.dir/clean
-
-#=============================================================================
-# Target rules for target mass_spring/CMakeFiles/test_mass_spring.dir
-
-# All Build rule for target.
-mass_spring/CMakeFiles/test_mass_spring.dir/all:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/test_mass_spring.dir/build.make mass_spring/CMakeFiles/test_mass_spring.dir/depend
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/test_mass_spring.dir/build.make mass_spring/CMakeFiles/test_mass_spring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=9,10 "Built target test_mass_spring"
-.PHONY : mass_spring/CMakeFiles/test_mass_spring.dir/all
-
-# Build rule for subdir invocation for target.
-mass_spring/CMakeFiles/test_mass_spring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mass_spring/CMakeFiles/test_mass_spring.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
-.PHONY : mass_spring/CMakeFiles/test_mass_spring.dir/rule
-
-# Convenience name for target.
-test_mass_spring: mass_spring/CMakeFiles/test_mass_spring.dir/rule
-.PHONY : test_mass_spring
-
-# clean rule for target.
-mass_spring/CMakeFiles/test_mass_spring.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/test_mass_spring.dir/build.make mass_spring/CMakeFiles/test_mass_spring.dir/clean
-.PHONY : mass_spring/CMakeFiles/test_mass_spring.dir/clean
-
-#=============================================================================
-# Target rules for target mass_spring/CMakeFiles/mass_spring.dir
-
-# All Build rule for target.
-mass_spring/CMakeFiles/mass_spring.dir/all:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/mass_spring.dir/build.make mass_spring/CMakeFiles/mass_spring.dir/depend
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/mass_spring.dir/build.make mass_spring/CMakeFiles/mass_spring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles --progress-num=3,4 "Built target mass_spring"
-.PHONY : mass_spring/CMakeFiles/mass_spring.dir/all
-
-# Build rule for subdir invocation for target.
-mass_spring/CMakeFiles/mass_spring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mass_spring/CMakeFiles/mass_spring.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ebonetti/Desktop/ASC-ODE/build/CMakeFiles 0
-.PHONY : mass_spring/CMakeFiles/mass_spring.dir/rule
-
-# Convenience name for target.
-mass_spring: mass_spring/CMakeFiles/mass_spring.dir/rule
-.PHONY : mass_spring
-
-# clean rule for target.
-mass_spring/CMakeFiles/mass_spring.dir/clean:
-	$(MAKE) $(MAKESILENT) -f mass_spring/CMakeFiles/mass_spring.dir/build.make mass_spring/CMakeFiles/mass_spring.dir/clean
-.PHONY : mass_spring/CMakeFiles/mass_spring.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

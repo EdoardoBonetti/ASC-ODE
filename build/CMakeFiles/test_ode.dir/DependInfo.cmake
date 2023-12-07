@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc" "CMakeFiles/test_ode.dir/demos/test_ode.cc.o" "gcc" "CMakeFiles/test_ode.dir/demos/test_ode.cc.o.d"
+  "/home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_ode.cc" "CMakeFiles/test_ode.dir/demos/test_ode.cc.o" "gcc" "CMakeFiles/test_ode.dir/demos/test_ode.cc.o.d"
   )
 
 # Targets to which this target links.

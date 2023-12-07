@@ -230,6 +230,7 @@ TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o: ../TomBin
   ../TomBino/src/matrix.h \
   ../TomBino/src/expression.h \
   ../TomBino/src/vector.h \
+  ../TomBino/src/matrix.h \
   ../TomBino/src/vector.h
 
 

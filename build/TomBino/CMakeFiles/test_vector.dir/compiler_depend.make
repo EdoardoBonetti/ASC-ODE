@@ -228,6 +228,7 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
   /usr/include/c++/12/sstream \
   /usr/include/c++/12/bits/sstream.tcc \
   ../TomBino/src/vector.h \
+  ../TomBino/src/matrix.h \
   ../TomBino/src/vector.h
 
 

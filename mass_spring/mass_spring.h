@@ -7,7 +7,7 @@
 using namespace ASC_ode;
 
 #include <vector.h>
-using namespace Tomino_bla;
+using namespace Tombino_bla;
 
 template <int D>
 class Mass
@@ -55,11 +55,11 @@ public:
 template <int D>
 class MassSpringSystem
 {
+
   std::vector<Fix<D>> fixes;
   std::vector<Mass<D>> masses;
   std::vector<Spring> springs;
-  Vec<D> gravity ;
-  gravity = 0.0;
+  Vec<D> gravity = 0.0;
 
 public:
   void SetGravity(Vec<D> _gravity) { gravity = _gravity; }

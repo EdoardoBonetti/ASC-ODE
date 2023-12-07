@@ -1,4 +1,4 @@
-# Install script for directory: /home/edo/ASC-ODE/src
+# Install script for directory: /home/ebonetti/Desktop/IntoToSC/ASC-ODE/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,11 +42,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/edo/ASC-ODE/src/nonlinfunc.h"
-    "/home/edo/ASC-ODE/src/Newton.h"
-    "/home/edo/ASC-ODE/src/ode.h"
+    "/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src/nonlinfunc.h"
+    "/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src/Newton.h"
+    "/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src/ode.h"
     )
 endif()
 
