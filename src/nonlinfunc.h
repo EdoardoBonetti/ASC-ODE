@@ -31,14 +31,12 @@ namespace ASC_ode
     void Evaluate(VectorView<double> x, VectorView<double> f) const override
     {
       f = x;
-      std::cout << "f = " << f << std::endl;
     }
 
     void EvaluateDeriv(VectorView<double> x, MatrixView<double> df) const override
     {
       df = 0.0;
       df.Diag() = 1.0;
-      std::cout << "df = " << df << std::endl;
     }
   };
 
@@ -55,12 +53,10 @@ namespace ASC_ode
     void Evaluate(VectorView<double> x, VectorView<double> f) const override
     {
       f = val;
-      std::cout << "f = " << f << std::endl;
     }
     void EvaluateDeriv(VectorView<double> x, MatrixView<double> df) const override
     {
       df = 0.0;
-      std::cout << "df = " << df << std::endl;
     }
   };
 

@@ -61,17 +61,13 @@ namespace ASC_ode
     double t = 0;
     for (int i = 0; i < steps; i++)
     {
-      std::cout << "i = " << i << std::endl;
       NewtonSolver(equ, a);
       xnew->Evaluate(a, x);
       vnew->Evaluate(a, v);
 
       xold->Set(x);
-      std::cout << "xold = " << xold->Get() << std::endl;
       vold->Set(v);
-      std::cout << "vold = " << vold->Get() << std::endl;
       aold->Set(a);
-      std::cout << "aold = " << aold->Get() << std::endl;
       t += dt;
       if (callback)
         callback(t, x);
@@ -93,9 +89,7 @@ namespace ASC_ode
     double beta = 0.25 * (1 - alpham + alphaf) * (1 - alpham + alphaf);
 
     Vector<> a(x.Size());
-    std::cout << "a = " << a << std::endl;
     Vector<> v(x.Size());
-    std::cout << "v = " << v << std::endl;
 
     auto xold = make_shared<ConstantFunction>(x);
     auto vold = make_shared<ConstantFunction>(dx);

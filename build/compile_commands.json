@@ -1,52 +1,62 @@
 [
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_ode.dir/demos/test_ode.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_ode.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/src -I/home/edo/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_ode.dir/demos/test_ode.cc.o -c /home/edo/ASC-ODE/demos/test_ode.cc",
+  "file": "/home/edo/ASC-ODE/demos/test_ode.cc",
+  "output": "CMakeFiles/test_ode.dir/demos/test_ode.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_newmark.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_newmark.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/src -I/home/edo/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/edo/ASC-ODE/demos/test_newmark.cc",
+  "file": "/home/edo/ASC-ODE/demos/test_newmark.cc",
+  "output": "CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/ebonetti/Desktop/ASC-ODE/demos/test_alpha.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/demos/test_alpha.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/src -I/home/edo/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/edo/ASC-ODE/demos/test_alpha.cc",
+  "file": "/home/edo/ASC-ODE/demos/test_alpha.cc",
+  "output": "CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_vector.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_vector.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o -c /home/edo/ASC-ODE/TomBino/tests_cpp/test_vector.cc",
+  "file": "/home/edo/ASC-ODE/TomBino/tests_cpp/test_vector.cc",
+  "output": "TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_matrix.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_matrix.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o -c /home/edo/ASC-ODE/TomBino/tests_cpp/test_matrix.cc",
+  "file": "/home/edo/ASC-ODE/TomBino/tests_cpp/test_matrix.cc",
+  "output": "TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_operations.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_operations.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -c /home/edo/ASC-ODE/TomBino/tests_cpp/test_operations.cc",
+  "file": "/home/edo/ASC-ODE/TomBino/tests_cpp/test_operations.cc",
+  "output": "TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o CMakeFiles/test_lapack.dir/tests_cpp/test_lapack.cc.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_lapack.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/tests_cpp/test_lapack.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/TomBino/src   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -o TomBino/CMakeFiles/test_lapack.dir/tests_cpp/test_lapack.cc.o -c /home/edo/ASC-ODE/TomBino/tests_cpp/test_lapack.cc",
+  "file": "/home/edo/ASC-ODE/TomBino/tests_cpp/test_lapack.cc",
+  "output": "TomBino/CMakeFiles/test_lapack.dir/tests_cpp/test_lapack.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/TomBino",
-  "command": "/usr/bin/g++-12 -Dbla_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/include   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/bla.dir/src/bind_bla.cpp.o -c /home/ebonetti/Desktop/ASC-ODE/TomBino/src/bind_bla.cpp",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/TomBino/src/bind_bla.cpp"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -Dbla_EXPORTS -I/home/edo/ASC-ODE/TomBino/src -isystem /usr/include/python3.11 -isystem /home/edo/.local/include   -O3 -Wall -Wunused-variable -Wunused-function -Wno-unused-but-set-variable -Wno-unused-but-set-parameter -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-label -Wno-unused-value -Wno-unused-local-typedefs -Wno-unused-local-typedef -fpermissive  -g -std=gnu++20 -fPIC -fvisibility=hidden -o TomBino/CMakeFiles/bla.dir/src/bind_bla.cpp.o -c /home/edo/ASC-ODE/TomBino/src/bind_bla.cpp",
+  "file": "/home/edo/ASC-ODE/TomBino/src/bind_bla.cpp",
+  "output": "TomBino/CMakeFiles/bla.dir/src/bind_bla.cpp.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12  -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -g -std=gnu++20 -o CMakeFiles/test_mass_spring.dir/mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/mass_spring.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -I/home/edo/ASC-ODE/src -I/home/edo/ASC-ODE/TomBino/src -g -std=gnu++20 -o mass_spring/CMakeFiles/test_mass_spring.dir/mass_spring.cc.o -c /home/edo/ASC-ODE/mass_spring/mass_spring.cc",
+  "file": "/home/edo/ASC-ODE/mass_spring/mass_spring.cc",
+  "output": "mass_spring/CMakeFiles/test_mass_spring.dir/mass_spring.cc.o"
 },
 {
-  "directory": "/home/ebonetti/Desktop/ASC-ODE/build/mass_spring",
-  "command": "/usr/bin/g++-12 -Dmass_spring_EXPORTS -I/home/ebonetti/Desktop/ASC-ODE/src -I/home/ebonetti/Desktop/ASC-ODE/TomBino/src -isystem /usr/include/python3.10 -isystem /home/ebonetti/.local/include -g -fPIC -fvisibility=hidden -std=gnu++20 -o CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o -c /home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc",
-  "file": "/home/ebonetti/Desktop/ASC-ODE/mass_spring/bind_mass_spring.cc"
+  "directory": "/home/edo/ASC-ODE/build",
+  "command": "/usr/bin/c++ -Dmass_spring_EXPORTS -I/home/edo/ASC-ODE/src -I/home/edo/ASC-ODE/TomBino/src -isystem /usr/include/python3.11 -isystem /home/edo/.local/include -g -std=gnu++20 -fPIC -fvisibility=hidden -o mass_spring/CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o -c /home/edo/ASC-ODE/mass_spring/bind_mass_spring.cc",
+  "file": "/home/edo/ASC-ODE/mass_spring/bind_mass_spring.cc",
+  "output": "mass_spring/CMakeFiles/mass_spring.dir/bind_mass_spring.cc.o"
 }
 ]

@@ -31,10 +31,6 @@ class dLagrange : public NonlinearFunction
     df(2, 0) = 2 * x(0);
     df(2, 1) = 2 * x(1);
     df(2, 2) = 0;
-
-    // print(df);
-    std::cout << "AAAAAAAAAAAAAAAAAAAAa" << std::endl;
-    std::cout << "df = " << df << std::endl;
   }
 };
 

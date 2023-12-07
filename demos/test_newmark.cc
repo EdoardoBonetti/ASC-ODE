@@ -28,5 +28,5 @@ int main()
   auto mass = make_shared<IdentityFunction>(1);
   SolveODE_Newmark(tend, steps, x, dx, rhs, mass,
                    [](double t, VectorView<double> x)
-                   { cout << "t = " << t << ", x = " << x(0) << endl; });
+                   { cout << t << " " << x(0) << endl; });
 }
