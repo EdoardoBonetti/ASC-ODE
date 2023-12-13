@@ -73,15 +73,15 @@ TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o: TomBino/C
 TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o: ../TomBino/tests_cpp/test_operations.cc
 TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o: TomBino/CMakeFiles/test_operations.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o"
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && $(CMAKE_COMMAND) -E __run_co_compile --cpplint="cpplint;--filter=-legal/copyright, -build/include_subdir" --source=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc -- /usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -MF CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o.d -o CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && $(CMAKE_COMMAND) -E __run_co_compile --cpplint="cpplint;--filter=-legal/copyright, -build/include_subdir" --source=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc -- /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -MF CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o.d -o CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc
 
 TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.i"
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && /usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc > CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.i
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc > CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.i
 
 TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.s"
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && /usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc -o CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.s
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/TomBino && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/tests_cpp/test_operations.cc -o CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.s
 
 # Object files for target test_operations
 test_operations_OBJECTS = \

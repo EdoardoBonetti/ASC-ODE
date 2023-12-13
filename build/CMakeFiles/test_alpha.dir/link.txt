@@ -1,1 +1,1 @@
-/usr/bin/g++-12 -g CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -o test_alpha   -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src  -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/src 
+/usr/bin/c++ CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -o test_alpha   -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src  -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/src 

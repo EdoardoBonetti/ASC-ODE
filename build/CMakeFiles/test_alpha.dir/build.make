@@ -73,15 +73,15 @@ CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o: CMakeFiles/test_alpha.dir/flags
 CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o: ../demos/test_alpha.cc
 CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o: CMakeFiles/test_alpha.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -MF CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o.d -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -MF CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o.d -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc
 
 CMakeFiles/test_alpha.dir/demos/test_alpha.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_alpha.dir/demos/test_alpha.cc.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc > CMakeFiles/test_alpha.dir/demos/test_alpha.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc > CMakeFiles/test_alpha.dir/demos/test_alpha.cc.i
 
 CMakeFiles/test_alpha.dir/demos/test_alpha.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_alpha.dir/demos/test_alpha.cc.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc -o CMakeFiles/test_alpha.dir/demos/test_alpha.cc.s
 
 # Object files for target test_alpha
 test_alpha_OBJECTS = \

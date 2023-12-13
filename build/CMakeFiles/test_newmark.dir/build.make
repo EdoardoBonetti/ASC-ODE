@@ -73,15 +73,15 @@ CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o: CMakeFiles/test_newmark.dir
 CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o: ../demos/test_newmark.cc
 CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o: CMakeFiles/test_newmark.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ebonetti/Desktop/IntoToSC/ASC-ODE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -MF CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o.d -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -MF CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o.d -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -c /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc
 
 CMakeFiles/test_newmark.dir/demos/test_newmark.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_newmark.dir/demos/test_newmark.cc.i"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc > CMakeFiles/test_newmark.dir/demos/test_newmark.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc > CMakeFiles/test_newmark.dir/demos/test_newmark.cc.i
 
 CMakeFiles/test_newmark.dir/demos/test_newmark.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_newmark.dir/demos/test_newmark.cc.s"
-	/usr/bin/g++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_newmark.cc -o CMakeFiles/test_newmark.dir/demos/test_newmark.cc.s
 
 # Object files for target test_newmark
 test_newmark_OBJECTS = \

@@ -1,1 +1,1 @@
-/usr/bin/g++-12 -g CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -o test_newmark   -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src  -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/src 
+/usr/bin/c++ CMakeFiles/test_newmark.dir/demos/test_newmark.cc.o -o test_newmark   -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src  -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/src 
