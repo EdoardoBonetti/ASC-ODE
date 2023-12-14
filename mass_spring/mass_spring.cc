@@ -1,33 +1,33 @@
 #include "mass_spring.h"
-
+#include <iostream>
 int main()
 {
-  MassSpringSystem<2> mss;
-  mss.SetGravity({0, -9.81});
-  auto fA = mss.AddFix({{0.0, 0.0}});
-  auto mA = mss.AddMass({1, {1.0, 0.0}});
-  mss.AddSpring({1, 10, {fA, mA}});
 
-  auto mB = mss.AddMass({1, {2.0, 0.0}});
-  mss.AddSpring({1, 20, {mA, mB}});
+     Vec<2> v2;
 
-  cout << "mss: " << endl
-       << mss << endl;
+     MassSpringSystem<2> mss;
+     mss.SetGravity({0, -9.81});
 
-  double tend = 10;
-  double steps = 1000;
+     auto fA = mss.AddFix({{0.0, 0.0}});
+     auto mA = mss.AddMass({1, {1.0, 0.0}});
+     mss.AddSpring({1, 10, {fA, mA}});
+     auto mB = mss.AddMass({1, {2.0, 0.0}});
+     mss.AddSpring({1, 20, {mA, mB}});
 
-  Vector<> x(2 * mss.Masses().size());
-  Vector<> dx(2 * mss.Masses().size());
-  Vector<> ddx(2 * mss.Masses().size());
+     double tend = 10;
+     double steps = 1000;
 
-  auto mss_func = make_shared<MSS_Function<2>>(mss);
-  auto mass = make_shared<IdentityFunction>(x.Size());
+     Vector<> x(2 * mss.Masses().size());
+     Vector<> dx(2 * mss.Masses().size());
+     Vector<> ddx(2 * mss.Masses().size());
 
-  mss.GetState(x, dx, ddx);
+     auto mss_func = make_shared<MSS_Function<2>>(mss);
+     auto mass = make_shared<IdentityFunction>(x.Size());
 
-  SolveODE_Newmark(tend, steps, x, dx, mss_func, mass,
-                   [](double t, VectorView<double> x)
-                   { cout << "t = " << t
-                          << ", x = " << Vec<4>(x) << endl; });
+     mss.GetState(x, dx, ddx);
+
+     SolveODE_Newmark(tend, steps, x, dx, mss_func, mass,
+                      [](double t, VectorView<double> x)
+                      { cout << t
+                             << ", " << Vec<4>(x) << endl; });
 }

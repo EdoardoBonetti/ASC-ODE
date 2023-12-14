@@ -3,6 +3,7 @@
 
 #include <nonlinfunc.h>
 #include <ode.h>
+#include <iostream>
 
 using namespace ASC_ode;
 
@@ -12,6 +13,7 @@ using namespace Tombino_bla;
 template <int D>
 class Mass
 {
+
 public:
   double mass;
   Vec<D> pos;
@@ -62,7 +64,11 @@ class MassSpringSystem
   Vec<D> gravity = 0.0;
 
 public:
-  void SetGravity(Vec<D> _gravity) { gravity = _gravity; }
+  void SetGravity(Vec<D> _gravity)
+  {
+
+    gravity = _gravity;
+  }
   Vec<D> Gravity() const { return gravity; }
 
   Connector AddFix(Fix<D> p)
