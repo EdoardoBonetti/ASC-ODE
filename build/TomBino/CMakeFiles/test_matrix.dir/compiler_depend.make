@@ -200,7 +200,6 @@ TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o: ../TomBino/tests_
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../TomBino/src/vector.h \
   ../TomBino/src/expression.h \
   /usr/include/c++/11/complex \
   /usr/include/c++/11/cmath \
@@ -230,9 +229,11 @@ TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o: ../TomBino/tests_
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  ../TomBino/src/matrix.h \
+  ../TomBino/src/vector.h \
   ../TomBino/src/vector.h
 
+
+../TomBino/src/vector.h:
 
 /usr/include/c++/11/sstream:
 
@@ -257,8 +258,6 @@ TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.o: ../TomBino/tests_
 /usr/include/math.h:
 
 ../TomBino/src/expression.h:
-
-../TomBino/src/vector.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 

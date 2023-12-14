@@ -230,15 +230,14 @@ TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o: ../TomBin
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/iostream \
   ../TomBino/src/matrix.h \
-  ../TomBino/src/vector.h \
   ../TomBino/src/expression.h \
-  ../TomBino/src/matrix.h \
+  ../TomBino/src/vector.h \
   ../TomBino/src/vector.h
 
 
-../TomBino/src/expression.h:
-
 ../TomBino/src/vector.h:
+
+../TomBino/src/expression.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 

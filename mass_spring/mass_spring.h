@@ -3,7 +3,6 @@
 
 #include <nonlinfunc.h>
 #include <ode.h>
-#include <iostream>
 
 using namespace ASC_ode;
 
@@ -13,7 +12,6 @@ using namespace Tombino_bla;
 template <int D>
 class Mass
 {
-
 public:
   double mass;
   Vec<D> pos;
