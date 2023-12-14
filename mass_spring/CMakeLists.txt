@@ -21,4 +21,4 @@ find_package(pybind11 CONFIG REQUIRED)
 pybind11_add_module(mass_spring bind_mass_spring.cc)
 
 # target_link_libraries (mass_spring PUBLIC ngbla)
-target_link_libraries(mass_spring PUBLIC ${CMAKE_SOURCE_DIR}/TomBino)
+target_link_libraries(mass_spring PUBLIC) # ${CMAKE_SOURCE_DIR}/TomBino)
