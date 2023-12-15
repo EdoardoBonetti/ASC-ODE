@@ -12,8 +12,8 @@ int main()
      auto mB = mss.AddMass({1, {2.0, 0.0}});
      mss.AddSpring({1, 20, {mA, mB}});
 
-     cout << "mss: " << endl
-          << mss << endl;
+     // cout << "mss: " << endl
+     //      << mss << endl;
 
      double tend = 10;
      double steps = 1000;

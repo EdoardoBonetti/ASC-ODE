@@ -1,3 +1,13 @@
+mss: 
+fixes:
+0, 0
+masses: 
+m = 1, pos = 1, 0
+m = 1, pos = 2, 0
+springs: 
+length = 1stiffness = 10, C1 = type = 1, nr = 0, C2 = type = 2, nr = 0
+length = 1stiffness = 20, C1 = type = 2, nr = 0, C2 = type = 2, nr = 1
+
 0.01, 1.00029, 1.99764, 0.000691322, 0
 0.02, 1.00117, 1.99056, 0.00275857, 0
 0.03, 1.00263, 1.97881, 0.00618162, 0
