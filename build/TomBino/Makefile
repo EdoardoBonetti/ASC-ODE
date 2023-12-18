@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -162,6 +172,398 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+TomBino/CMakeFiles/Experimental.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/Experimental.dir/rule
+.PHONY : TomBino/CMakeFiles/Experimental.dir/rule
+
+# Convenience name for target.
+Experimental: TomBino/CMakeFiles/Experimental.dir/rule
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/Experimental.dir/build.make TomBino/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/Nightly.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/Nightly.dir/rule
+.PHONY : TomBino/CMakeFiles/Nightly.dir/rule
+
+# Convenience name for target.
+Nightly: TomBino/CMakeFiles/Nightly.dir/rule
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/Nightly.dir/build.make TomBino/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/Continuous.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/Continuous.dir/rule
+.PHONY : TomBino/CMakeFiles/Continuous.dir/rule
+
+# Convenience name for target.
+Continuous: TomBino/CMakeFiles/Continuous.dir/rule
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/Continuous.dir/build.make TomBino/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyMemoryCheck.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyMemoryCheck.dir/rule
+
+# Convenience name for target.
+NightlyMemoryCheck: TomBino/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyMemoryCheck.dir/build.make TomBino/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyStart.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyStart.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyStart.dir/rule
+
+# Convenience name for target.
+NightlyStart: TomBino/CMakeFiles/NightlyStart.dir/rule
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyStart.dir/build.make TomBino/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyUpdate.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyUpdate.dir/rule
+
+# Convenience name for target.
+NightlyUpdate: TomBino/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyUpdate.dir/build.make TomBino/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyConfigure.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyConfigure.dir/rule
+
+# Convenience name for target.
+NightlyConfigure: TomBino/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyConfigure.dir/build.make TomBino/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyBuild.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyBuild.dir/rule
+
+# Convenience name for target.
+NightlyBuild: TomBino/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyBuild.dir/build.make TomBino/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyTest.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyTest.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyTest.dir/rule
+
+# Convenience name for target.
+NightlyTest: TomBino/CMakeFiles/NightlyTest.dir/rule
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyTest.dir/build.make TomBino/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyCoverage.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyCoverage.dir/rule
+
+# Convenience name for target.
+NightlyCoverage: TomBino/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyCoverage.dir/build.make TomBino/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlyMemCheck.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlyMemCheck.dir/rule
+
+# Convenience name for target.
+NightlyMemCheck: TomBino/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlyMemCheck.dir/build.make TomBino/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/NightlySubmit.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : TomBino/CMakeFiles/NightlySubmit.dir/rule
+
+# Convenience name for target.
+NightlySubmit: TomBino/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/NightlySubmit.dir/build.make TomBino/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalStart.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalStart.dir/rule
+
+# Convenience name for target.
+ExperimentalStart: TomBino/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalStart.dir/build.make TomBino/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalUpdate.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalUpdate.dir/rule
+
+# Convenience name for target.
+ExperimentalUpdate: TomBino/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalUpdate.dir/build.make TomBino/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalConfigure.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalConfigure.dir/rule
+
+# Convenience name for target.
+ExperimentalConfigure: TomBino/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalConfigure.dir/build.make TomBino/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalBuild.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalBuild.dir/rule
+
+# Convenience name for target.
+ExperimentalBuild: TomBino/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalBuild.dir/build.make TomBino/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalTest.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalTest.dir/rule
+
+# Convenience name for target.
+ExperimentalTest: TomBino/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalTest.dir/build.make TomBino/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalCoverage.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalCoverage.dir/rule
+
+# Convenience name for target.
+ExperimentalCoverage: TomBino/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalCoverage.dir/build.make TomBino/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalMemCheck.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalMemCheck.dir/rule
+
+# Convenience name for target.
+ExperimentalMemCheck: TomBino/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalMemCheck.dir/build.make TomBino/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ExperimentalSubmit.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : TomBino/CMakeFiles/ExperimentalSubmit.dir/rule
+
+# Convenience name for target.
+ExperimentalSubmit: TomBino/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ExperimentalSubmit.dir/build.make TomBino/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousStart.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousStart.dir/rule
+
+# Convenience name for target.
+ContinuousStart: TomBino/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousStart.dir/build.make TomBino/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousUpdate.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousUpdate.dir/rule
+
+# Convenience name for target.
+ContinuousUpdate: TomBino/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousUpdate.dir/build.make TomBino/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousConfigure.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousConfigure.dir/rule
+
+# Convenience name for target.
+ContinuousConfigure: TomBino/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousConfigure.dir/build.make TomBino/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousBuild.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousBuild.dir/rule
+
+# Convenience name for target.
+ContinuousBuild: TomBino/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousBuild.dir/build.make TomBino/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousTest.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousTest.dir/rule
+
+# Convenience name for target.
+ContinuousTest: TomBino/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousTest.dir/build.make TomBino/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousCoverage.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousCoverage.dir/rule
+
+# Convenience name for target.
+ContinuousCoverage: TomBino/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousCoverage.dir/build.make TomBino/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousMemCheck.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousMemCheck.dir/rule
+
+# Convenience name for target.
+ContinuousMemCheck: TomBino/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousMemCheck.dir/build.make TomBino/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+# Convenience name for target.
+TomBino/CMakeFiles/ContinuousSubmit.dir/rule:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : TomBino/CMakeFiles/ContinuousSubmit.dir/rule
+
+# Convenience name for target.
+ContinuousSubmit: TomBino/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/ContinuousSubmit.dir/build.make TomBino/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+# Convenience name for target.
 TomBino/CMakeFiles/test_vector.dir/rule:
 	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_vector.dir/rule
 .PHONY : TomBino/CMakeFiles/test_vector.dir/rule
@@ -188,20 +590,6 @@ test_matrix: TomBino/CMakeFiles/test_matrix.dir/rule
 test_matrix/fast:
 	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_matrix.dir/build.make TomBino/CMakeFiles/test_matrix.dir/build
 .PHONY : test_matrix/fast
-
-# Convenience name for target.
-TomBino/CMakeFiles/test_operations.dir/rule:
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TomBino/CMakeFiles/test_operations.dir/rule
-.PHONY : TomBino/CMakeFiles/test_operations.dir/rule
-
-# Convenience name for target.
-test_operations: TomBino/CMakeFiles/test_operations.dir/rule
-.PHONY : test_operations
-
-# fast build rule for target.
-test_operations/fast:
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/build
-.PHONY : test_operations/fast
 
 # Convenience name for target.
 TomBino/CMakeFiles/test_lapack.dir/rule:
@@ -303,30 +691,6 @@ tests_cpp/test_matrix.cc.s:
 	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_matrix.dir/build.make TomBino/CMakeFiles/test_matrix.dir/tests_cpp/test_matrix.cc.s
 .PHONY : tests_cpp/test_matrix.cc.s
 
-tests_cpp/test_operations.o: tests_cpp/test_operations.cc.o
-.PHONY : tests_cpp/test_operations.o
-
-# target to build an object file
-tests_cpp/test_operations.cc.o:
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.o
-.PHONY : tests_cpp/test_operations.cc.o
-
-tests_cpp/test_operations.i: tests_cpp/test_operations.cc.i
-.PHONY : tests_cpp/test_operations.i
-
-# target to preprocess a source file
-tests_cpp/test_operations.cc.i:
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.i
-.PHONY : tests_cpp/test_operations.cc.i
-
-tests_cpp/test_operations.s: tests_cpp/test_operations.cc.s
-.PHONY : tests_cpp/test_operations.s
-
-# target to generate assembly for a file
-tests_cpp/test_operations.cc.s:
-	cd /home/ebonetti/Desktop/IntoToSC/ASC-ODE/build && $(MAKE) $(MAKESILENT) -f TomBino/CMakeFiles/test_operations.dir/build.make TomBino/CMakeFiles/test_operations.dir/tests_cpp/test_operations.cc.s
-.PHONY : tests_cpp/test_operations.cc.s
-
 tests_cpp/test_vector.o: tests_cpp/test_vector.cc.o
 .PHONY : tests_cpp/test_vector.o
 
@@ -363,10 +727,38 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
 	@echo "... bla"
 	@echo "... test_lapack"
 	@echo "... test_matrix"
-	@echo "... test_operations"
 	@echo "... test_vector"
 	@echo "... src/bind_bla.o"
 	@echo "... src/bind_bla.i"
@@ -377,9 +769,6 @@ help:
 	@echo "... tests_cpp/test_matrix.o"
 	@echo "... tests_cpp/test_matrix.i"
 	@echo "... tests_cpp/test_matrix.s"
-	@echo "... tests_cpp/test_operations.o"
-	@echo "... tests_cpp/test_operations.i"
-	@echo "... tests_cpp/test_operations.s"
 	@echo "... tests_cpp/test_vector.o"
 	@echo "... tests_cpp/test_vector.i"
 	@echo "... tests_cpp/test_vector.s"

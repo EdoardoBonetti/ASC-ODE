@@ -33,3 +33,10 @@ add_executable(test_alpha demos/test_alpha.cc)
 
 #target_link_libraries(test_alpha PUBLIC TomBino_bla)
 add_subdirectory(mass_spring)
+
+# add test
+enable_testing()
+add_test(NAME test_ode COMMAND test_ode)
+add_test(NAME test_newmark COMMAND test_newmark)
+add_test(NAME test_alpha COMMAND test_alpha)
+
