@@ -481,9 +481,9 @@ TomBino/CMakeFiles/bla.dir/src/bind_bla.cpp.o: ../TomBino/src/bind_bla.cpp \
   /usr/include/c++/11/bits/indirect_array.h \
   /usr/include/c++/11/variant \
   /usr/include/c++/11/bits/parse_numbers.h \
-  ../TomBino/src/expression.h \
-  /usr/include/c++/11/iostream \
   ../TomBino/src/lapack_interface.h \
+  /usr/include/c++/11/iostream \
+  ../TomBino/src/expression.h \
   ../TomBino/src/matrix.h \
   ../TomBino/src/vector.h \
   ../TomBino/src/clapack.h \
@@ -554,9 +554,9 @@ TomBino/CMakeFiles/bla.dir/src/bind_bla.cpp.o: ../TomBino/src/bind_bla.cpp \
 
 /usr/include/c++/11/unordered_map:
 
-../TomBino/src/lapack_interface.h:
-
 ../TomBino/src/expression.h:
+
+../TomBino/src/lapack_interface.h:
 
 /usr/include/c++/11/bits/stream_iterator.h:
 

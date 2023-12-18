@@ -3,7 +3,7 @@
 
 TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_cpp/test_vector.cc \
   /usr/include/stdc-predef.h \
-  ../TomBino/src/vector.h \
+  ../TomBino/src/matrix.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -229,22 +229,11 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/cassert \
-  /usr/include/assert.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  ../TomBino/src/vector.h \
+  ../TomBino/src/vector.h
 
 
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/vector:
+../TomBino/src/vector.h:
 
 /usr/include/c++/11/sstream:
 
@@ -293,8 +282,6 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 /usr/include/c++/11/stdexcept:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/system_error:
 
@@ -376,8 +363,6 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 
 /usr/include/stdlib.h:
 
-/usr/include/c++/11/cassert:
-
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
@@ -424,14 +409,6 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 
 /usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
-/usr/include/assert.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
@@ -464,13 +441,13 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/11/ostream:
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/11/complex:
+../TomBino/tests_cpp/test_vector.cc:
 
-/usr/include/c++/11/bits/ostream_insert.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -506,21 +483,15 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-../TomBino/tests_cpp/test_vector.cc:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
-../TomBino/src/vector.h:
+/usr/include/c++/11/ostream:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/c++/11/complex:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/compare:
 
@@ -535,6 +506,22 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+../TomBino/src/matrix.h:
+
+/usr/include/c++/11/type_traits:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -568,19 +555,15 @@ TomBino/CMakeFiles/test_vector.dir/tests_cpp/test_vector.cc.o: ../TomBino/tests_
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/11/type_traits:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/string:
-
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
