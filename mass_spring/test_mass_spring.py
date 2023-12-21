@@ -1,7 +1,8 @@
 import sys
 from pathlib import Path
 
-sys.path.append(f"{Path.cwd().parent}/mass_spring")
+sys.path.append(f"{Path.cwd().parent}")
+sys.path.append("/home/edo/Intro2SC/ASC-ODE/build/mass_spring")
 
 for p in sys.path:
     print(p)
@@ -12,7 +13,7 @@ import TomBino.bla
 
 
 mss = MassSpringSystem3d()
-mss.gravity = (0, 0, -9.81)
+mss.gravity = (0, 0, 0-9.81)
 
 mA = mss.Add(Mass(1, (1, 0, 0)))
 mB = mss.Add(Mass(2, (2, 0, 0)))

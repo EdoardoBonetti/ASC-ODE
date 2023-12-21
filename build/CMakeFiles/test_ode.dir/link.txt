@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/test_ode.dir/demos/test_ode.cc.o -o test_ode   -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/src  -L/home/ebonetti/Desktop/IntoToSC/ASC-ODE/TomBino/src 
+/usr/bin/c++ -g CMakeFiles/test_ode.dir/demos/test_ode.cc.o -o test_ode   -L/home/edo/Intro2SC/ASC-ODE/src  -L/home/edo/Intro2SC/ASC-ODE/TomBino/src 

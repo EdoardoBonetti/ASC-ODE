@@ -8,11 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ebonetti/Desktop/IntoToSC/ASC-ODE/demos/test_alpha.cc" "CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o" "gcc" "CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o.d"
+  "/home/edo/Intro2SC/ASC-ODE/demos/test_alpha.cc" "CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o" "gcc" "CMakeFiles/test_alpha.dir/demos/test_alpha.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
